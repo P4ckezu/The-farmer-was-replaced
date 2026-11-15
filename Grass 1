@@ -1,15 +1,11 @@
-#Clears the farm before starting
 clear()
 
-#Waits for a moment before starting
 do_a_flip()
 
 while True:
-#Basically world size for example 3x3 = 9 tiles
 	for i in range(get_world_size()):
 		for j in range(get_world_size()):
 
-#Waits until it can harvest and when it can it does so
 			if can_harvest():
 				harvest()
 				move(North)
